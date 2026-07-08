@@ -150,6 +150,30 @@ section.blk.alt .statgrid .cell{background:var(--bg-2)}
 footer{border-top:1px solid var(--line);padding:30px 0}
 .foot-in{display:flex;justify-content:space-between;font-size:13px;color:var(--dim);font-family:"Inter",sans-serif}
 
+/* ---------- PITCH GALLERY ---------- */
+.pitch-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px;margin-top:40px}
+@media(max-width:520px){.pitch-grid{grid-template-columns:1fr}}
+.pitch-card{text-align:left;display:flex;flex-direction:column;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:22px;cursor:pointer;transition:box-shadow .3s,transform .3s;font-family:"Inter",sans-serif}
+.pitch-card:hover{box-shadow:0 14px 34px rgba(23,21,15,.09);transform:translateY(-3px);border-color:var(--ac)}
+.pc-vert{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);font-weight:600}
+.pitch-card h4{font-family:"Fraunces",serif;font-style:italic;font-size:20px;font-weight:500;margin:14px 0 8px;color:var(--fg)}
+.pitch-card p{font-size:13px;color:#5A5644;line-height:1.5}
+
+/* ---------- PITCH MODAL ---------- */
+.modal{position:fixed;inset:0;z-index:400;display:none;align-items:center;justify-content:center;padding:clamp(0px,3vw,40px)}
+.modal.open{display:flex}
+body.modal-open{overflow:hidden}
+.modal-backdrop{position:absolute;inset:0;background:rgba(23,21,15,.5);backdrop-filter:blur(6px);cursor:zoom-out}
+.modal-panel{position:relative;z-index:1;width:min(1080px,100%);height:min(94vh,100%);background:var(--bg);border:1px solid var(--line-2);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 30px 90px rgba(23,21,15,.25)}
+.modal-bar{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--line);background:var(--bg-2)}
+.modal-title{font-family:"Fraunces",serif;font-style:italic;font-size:16px}
+.modal-btn{font-family:"Inter",sans-serif;font-size:13px;border:1px solid var(--line-2);padding:8px 14px;border-radius:100px;background:transparent;color:var(--fg);cursor:pointer;transition:all .3s}
+.modal-btn:hover{border-color:var(--ac);color:var(--ac)}
+.modal-body{flex:1;background:#e9e4d8}
+.modal-body iframe{width:100%;height:100%;border:none}
+
+@media(prefers-reduced-motion:reduce){*{transition-duration:.001ms!important}.rv{opacity:1;transform:none}}
+
 @media(prefers-reduced-motion:reduce){
   *{transition-duration:.001ms!important;scroll-behavior:auto!important}
   .rv{opacity:1;transform:none}
