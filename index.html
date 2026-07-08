@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sultan Kazbek — Синтез: цифры вперёд</title>
+<meta name="description" content="Operations & Growth. +64% роста и 6.3× ROAS в OTAN за 2 года. Цифры говорят первыми.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230a0a0b'/%3E%3Ctext x='50' y='71' font-family='Arial,sans-serif' font-size='62' font-weight='700' fill='%23C9A24B' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+</head>
+<body class="loading">
+
+<div class="grain" aria-hidden="true"></div>
+<div class="prog" id="prog"></div>
+
+<!-- INDEX NAV (Obys-style numbered) -->
+<aside class="idx" id="idx" aria-hidden="true">
+  <a href="#stats" data-scroll class="ix active"><span>00</span></a>
+  <a href="#otan" data-scroll class="ix"><span>01</span></a>
+  <a href="#early" data-scroll class="ix"><span>02</span></a>
+  <a href="#compare" data-scroll class="ix"><span>03</span></a>
+  <a href="#method" data-scroll class="ix"><span>04</span></a>
+  <a href="#about" data-scroll class="ix"><span>05</span></a>
+  <a href="#contact" data-scroll class="ix"><span>06</span></a>
+</aside>
+
+<nav id="nav">
+  <div class="wrap nav-in">
+    <a href="#stats" class="brand" data-scroll>Sultan Kazbek<span>.</span></a>
+    <a href="#contact" class="nav-cta" data-scroll>Нанять <span class="arr">↗</span></a>
+  </div>
+</nav>
+
+<!-- GIANT-STAT HERO SEQUENCE (Rejouice-style: number owns the whole screen) -->
+<header class="statshero" id="stats">
+  <div class="ss-slide in" data-idx="0">
+    <span class="ss-label">01 — За 2 года в OTAN</span>
+    <div class="ss-num"><span class="gold">+</span><span data-count="64" data-suffix="%">0%</span></div>
+    <span class="ss-cap">совокупный рост компании</span>
+  </div>
+  <div class="ss-slide" data-idx="1">
+    <span class="ss-label">02 — Средний ROAS, 2 канала</span>
+    <div class="ss-num"><span data-count="6.3" data-dec="1" data-suffix="×">0×</span></div>
+    <span class="ss-cap">Kaspi 7.37× · Target 5.74×</span>
+  </div>
+  <div class="ss-slide" data-idx="2">
+    <span class="ss-label">03 — Выручка от рекламы</span>
+    <div class="ss-num"><span data-count="167" data-suffix="M ₸">0M ₸</span></div>
+    <span class="ss-cap">на 26.5M ₸ расхода</span>
+  </div>
+  <div class="ss-slide ss-final" data-idx="3">
+    <p class="ss-claim">Это не отчёты. <span class="gold">Это управляемый результат.</span></p>
+    <p class="ss-sub">Sultan Kazbek — Operations &amp; Growth. Астана, KZ.</p>
+    <div class="ss-cta-row">
+      <a href="#contact" class="btn btn-primary" data-scroll>Нанять меня <span class="arr">↗</span></a>
+      <a href="#otan" class="btn btn-ghost" data-scroll>Как я это сделал</a>
+    </div>
+  </div>
+  <div class="ss-dots" aria-hidden="true"><span class="d active"></span><span class="d"></span><span class="d"></span><span class="d"></span></div>
+</header>
+
+<!-- OTAN CASE (clean card treatment) -->
+<section class="blk" id="otan">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="sec-idx">01</span><span class="sec-title">OTAN</span><span class="sec-note">Заместитель директора · 08.2023 — сейчас</span></div>
+    <p class="lead rv">OTAN существовал как дизайнерский бренд без процессов. Я выстроил полный цикл — <b>продукт → упаковка → продажи → логистика → сервис</b> — и вывел платные каналы в устойчивую прибыль.</p>
+    <div class="statgrid rv d1" id="otanStats">
+      <div class="cell"><div class="big"><span data-count="90.7" data-dec="1" data-suffix="M">0M</span></div><div class="cap">Выручка 2024, ₸ (+58.9%)</div></div>
+      <div class="cell"><div class="big"><span data-count="22" data-prefix="+" data-suffix="%">+0%</span></div><div class="cap">Средний чек: 234K → 285K ₸</div></div>
+      <div class="cell"><div class="big"><span data-count="40" data-prefix="−" data-suffix="%">−0%</span></div><div class="cap">CPL, 500K+ просмотров TikTok</div></div>
+      <div class="cell"><div class="big"><span data-count="80" data-suffix="%">0%</span></div><div class="cap">Доставок ≤3 дня (было 65.7%)</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EARLY PROJECTS -->
+<section class="blk alt" id="early">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="sec-idx">02</span><span class="sec-title">Ранние проекты</span><span class="sec-note">2021 — 2022</span></div>
+    <div class="cards2">
+      <div class="pcard rv"><div class="tag">MedTech · cerebra.kz</div><h3>Бренд с нуля</h3><p>Диагностика инсульта. Построил присутствие с нуля до растущей аудитории.</p><div class="pstats"><div class="ps"><div class="pn">377</div><div class="pl">охват/нед.</div></div></div></div>
+      <div class="pcard rv d1"><div class="tag">Соц. миссия · neuro.damu</div><h3>350K просмотров</h3><p>Фонд по инсульту. Тексты с нейрохирургом, запустил рекламную кампанию.</p><div class="pstats"><div class="ps"><div class="pn">900</div><div class="pl">подписчиков</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HONEST COMPARISON (highest-converting sell scene) -->
+<section class="blk" id="compare">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="sec-idx">03</span><span class="sec-title">Кого вы на самом деле нанимаете</span><span class="sec-note">Честно, без маркетинга</span></div>
+    <p class="lead rv">Три реальных варианта закрыть роль в growth/маркетинге. Вот чем они отличаются.</p>
+    <div class="cmp rv d1">
+      <div class="cmp-col">
+        <div class="cmp-h">Джуниор-исполнитель</div>
+        <div class="cmp-price">Дёшево</div>
+        <ul>
+          <li class="bad">Нужно постоянно управлять</li>
+          <li class="bad">Делает задачи, не видит систему</li>
+          <li class="bad">Нет ответственности за результат</li>
+        </ul>
+      </div>
+      <div class="cmp-col">
+        <div class="cmp-h">Сеньор-агентство</div>
+        <div class="cmp-price">3× дороже</div>
+        <ul>
+          <li class="ok">Стратегия и опыт</li>
+          <li class="bad">Медленно, ваш проект — один из 10</li>
+          <li class="bad">Отчёты вместо погружения</li>
+        </ul>
+      </div>
+      <div class="cmp-col cmp-me">
+        <div class="cmp-h">Sultan<span class="gold">.</span></div>
+        <div class="cmp-price gold">Сеньорский результат</div>
+        <ul>
+          <li class="ok">2 года реального P&amp;L-опыта (OTAN)</li>
+          <li class="ok">Владею результатом end-to-end</li>
+          <li class="ok">AI-native — глубина агентства за дни</li>
+          <li class="ok">Голод и доступность junior-найма</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHOD -->
+<section class="blk alt" id="method">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="sec-idx">04</span><span class="sec-title">Как работаю</span><span class="sec-note">Метод, не магия</span></div>
+    <div class="method rv">
+      <h3>Иду в глубину агентства за дни, а не недели — потому что работаю AI-native.</h3>
+      <p>ИИ + система из 100+ маркетинговых фреймворков даёт каждому брифу строгость стратега. <b>Но стратегию и решение «что здесь верно» принимаю я — это и есть то, что вы нанимаете.</b></p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="blk" id="about">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="sec-idx">05</span><span class="sec-title">О себе</span></div>
+    <div class="about-big rv">Маркетолог, который <span class="gold">владеет результатом</span>, а не задачами.</div>
+    <p class="lead rv d1" style="margin-top:24px">Sultan Kazbek, Астана, 23. Ищу роль в growth/маркетинге/операциях — не «человека, который постит».</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="rv"><span class="eyebrow">Свяжитесь со мной</span>
+      <h2 class="contact-h">Давайте <span class="gold">сделаем</span><br>цифры.</h2>
+      <a href="mailto:kazsultan.uni@gmail.com" class="btn btn-primary" style="margin-top:36px">kazsultan.uni@gmail.com <span class="arr">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap foot-in"><span>© <span id="year"></span> Sultan Kazbek</span><span>Астана</span></div></footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
